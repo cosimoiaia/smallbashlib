@@ -36,7 +36,7 @@ subject='[ERROR] ${NAME} on `hostname -f` FAILED!'
 LOG()
 {
         echo -e "\e[33m$*\e[0m" 1>&2
-        echo [LOG] [${TODAY}] $* &>${LOGFILE}
+        echo [LOG] [${TODAY}] $* &>>${LOGFILE}
 }
 
 ERR()
